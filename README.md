@@ -16,17 +16,3 @@ Hiermit können alle Slides erzeugt werden. Output ist entsprechend der `build` 
 `.marprc.yml` enthält die Konfiguration für Theme, Output etc.
 
 Die gerenderten Slides befinden sich `Slides`
-
-<<<<<<< HEAD
-=======
-# Combin'en der Folien
-
-## Erstellen eins PDF Dokuments
-
-Sind erst einmal alle PDFs erzeugt, können diese mit den PDF Tools zu einem großen PDF zusammengefügt werden.
-
-__Wichtig:__ Es müssen die `PDFTools.exe` aus dem `Cleaner-Code` branch verwendet werden, da dieser Wildcards unterstützt.
-
-    src\PdfTools\bin\Debug\PdfTools.exe combine aa.pdf .\docs\build\*.pdf
-
->>>>>>> c178b3951a871a9234cb151882b2c30522311276

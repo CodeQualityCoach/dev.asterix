@@ -18,7 +18,7 @@ namespace ConsoleHelloWorld
 
             if (operation == "add")
             {
-                double result = op1 + op2;
+                double result = GetAdd(op1, op2);
                 Console.WriteLine(result);
             }
             else if (operation == "sub")
@@ -33,25 +33,70 @@ namespace ConsoleHelloWorld
             }
             else if (operation == "div")
             {
-                if (op2 == 0)
-                {
-                    Console.WriteLine("Cannot divide by zero, dumbass");
-                    return;
-                }
-
-                // check if op2 != 0.0
-                double result = op1 / op2;
-                Console.WriteLine(result);
+                DoDiv(op1, op2);
             }
             else if (operation == "mod")
             {
                 double result = op1 % op2;
                 Console.WriteLine(result);
             }
+            else if (operation == "sum")
+            {
+                int result = GetSummeFor(Convert.ToInt32(op1), Convert.ToInt32(op2));
+                Console.WriteLine(result);
+            }
             else
             {
                 Console.WriteLine("Operation unknown");
             }
+        }
+
+        private static int GetSummeWhile(int op1, int op2)
+        {
+            if (op1 > op2) { return -1; }
+            int summe = 0;
+
+            int current = op1;
+            while (current <= op2)
+            {
+                summe = summe + current;
+                // current = current + 1;
+                current++;
+            };
+
+            return summe;
+        }
+
+        private static int GetSummeFor(int op1, int op2)
+        {
+            if (op1 > op2) { return -1; }
+            int summe = 0;
+
+            for (int current = op1; current <= op2; current++)
+            {
+                summe = summe + current;
+                current = current + 1;
+            }
+
+            return summe;
+        }
+
+        private static void DoDiv(double op1, double op2)
+        {
+            if (op2 == 0)
+            {
+                Console.WriteLine("Cannot divide by zero, dumbass");
+                return;
+            }
+
+            // check if op2 != 0.0
+            double result = op1 / op2;
+            Console.WriteLine(result);
+        }
+
+        public static double GetAdd(double foo, double o2)
+        {
+            return foo + o2;
         }
     }
 }

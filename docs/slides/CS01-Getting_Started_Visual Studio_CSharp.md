@@ -106,7 +106,7 @@ size: 4K
 - Extract methods
 
 ---
-# Iterations
+## Iterations
 
 - While
 - For
@@ -116,3 +116,9 @@ size: 4K
 ## Demo
 
 - Implement "Sum"
+
+---
+##
+
+- Implement "fac 2 5"
+- fac 3 5 = 3*4*5

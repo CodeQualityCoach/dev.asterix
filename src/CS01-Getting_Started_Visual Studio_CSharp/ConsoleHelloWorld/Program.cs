@@ -7,10 +7,11 @@ namespace ConsoleHelloWorld
         static void Main(string[] args)
         {
             if (args.Length < 3)
+            {
+                Console.WriteLine("Not enough parameter");
                 return;
+            }
 
-
-            // Annahme: 3 Parameter Operation, Ersten Operanden, Zweiten Operanden
             string operation = args[0];
             double op1 = Convert.ToDouble(args[1]);
             double op2 = Convert.ToDouble(args[2]);
@@ -32,6 +33,12 @@ namespace ConsoleHelloWorld
             }
             else if (operation == "div")
             {
+                if (op2 == 0)
+                {
+                    Console.WriteLine("Cannot divide by zero, dumbass");
+                    return;
+                }
+
                 // check if op2 != 0.0
                 double result = op1 / op2;
                 Console.WriteLine(result);
@@ -43,7 +50,7 @@ namespace ConsoleHelloWorld
             }
             else
             {
-                Console.WriteLine("why am I here?");
+                Console.WriteLine("Operation unknown");
             }
         }
     }

@@ -62,10 +62,9 @@ size: 4K
    * +, -, *, /, %
    * ++, --
 * Logical
-   * && (and)
-   * ||(or)
-   * == 
-   * !
+   * && (and) / ||(or)
+   * == / != / !
+   * <  <=  >  >=
 
 ---
 ## Conditions
@@ -77,7 +76,12 @@ size: 4K
 ## Demo
 
 - Calculator
-- Add, Sub
+- Add
+
+---
+## Task
+
+- Implement "sub", "mul", "div", "mod"
 
 ---
 ## Functions

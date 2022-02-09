@@ -2,7 +2,7 @@
   "profiles": {
     "ConsoleHelloWorld": {
       "commandName": "Project",
-      "commandLineArgs": "add 5 7"
+      "commandLineArgs": "div 12 0"
     }
   }
 }

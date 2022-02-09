@@ -64,6 +64,8 @@ size: 4K
 * Logical
    * && (and)
    * ||(or)
+   * == 
+   * !
 
 ---
 ## Conditions
